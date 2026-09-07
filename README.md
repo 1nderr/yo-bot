@@ -1,4 +1,4 @@
-# YoBot
+# yo-bot
 
 This is a Discord bot written in Python that lets the boys vote on whether they are getting on Discord. It
 posts a poll in the same channel at the same time every day and reads the reactions back out.

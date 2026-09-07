@@ -3,7 +3,7 @@
 This is a Discord bot written in Python that lets the boys vote on whether they are getting on Discord. It
 posts a poll in the same channel at the same time every day and reads the reactions back out.
 
-![](https://github.com/is386/yo-bot/blob/main/demo.png?raw=true)
+![](https://github.com/1nderr/yo-bot/blob/main/demo.png?raw=true)
 
 ## Features
 

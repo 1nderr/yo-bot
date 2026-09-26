@@ -1,11 +1,14 @@
 FROM python:3.12
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 WORKDIR /app
 
-COPY requirements.txt ./
+ENV UV_NO_DEV=1
 
-RUN pip install -r requirements.txt
+COPY pyproject.toml uv.lock .python-version ./
+
+RUN uv sync --locked
 
 COPY . /app
 
-CMD [ "python3", "main.py" ]
+CMD [ "uv", "run", "main.py" ]

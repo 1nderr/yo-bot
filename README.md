@@ -42,7 +42,8 @@ The following is required in a `.env` file:
 - `discord.py`
 - `python-dotenv`
 
-To use the `requirements.txt` file, just run `pip3 install -r requirements.txt`.
+The dependencies are managed with [uv](https://docs.astral.sh/uv/). Run `uv sync` to install them, and
+`uv run main.py` to run the bot without Docker.
 
 ## Build
 

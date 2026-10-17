@@ -51,4 +51,4 @@ The dependencies are managed with [uv](https://docs.astral.sh/uv/). Run `uv sync
 
 ## Run
 
-`docker run --rm -d yobot`
+`docker run -d --restart unless-stopped --name yobot yobot`
